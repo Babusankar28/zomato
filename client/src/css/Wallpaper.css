@@ -1,0 +1,19 @@
+.wallpaper {
+  background-image: linear-gradient(rgba(1, 1, 1, 0.6), rgba(1, 1, 1, 0.6)),
+    url("../image/wallpaper_bg_image.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.wallpaper .wallpaper-logo img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50%;
+}
+
+.wallpaper .wallpaper-container {
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
