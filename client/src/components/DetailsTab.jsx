@@ -3,19 +3,19 @@ import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 const DetailsTab = () => {
   return (
-    <div className="container details-tab mt-2">
+    <div className="container details-tab mt-3 pb-5">
+      <div className="py-3">
+        <h1 className="d-inline-block">Bigchil Cakery</h1>
+        <button className="btn order-btn mt-2">Place order online</button>
+      </div>
       <Tabs
         defaultActiveKey="home"
         transition={false}
         id="noanim-tab-example"
         className="mb-3"
       >
-        <Tab eventKey="home" title="Home">
-          Tab content for Home
-        </Tab>
-        <Tab eventKey="profile" title="Profile">
-          Tab content for Profile
-        </Tab>
+        <Tab eventKey="home" title="Overview"></Tab>
+        <Tab eventKey="profile" title="Contact"></Tab>
       </Tabs>
     </div>
   );

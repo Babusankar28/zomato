@@ -2,3 +2,13 @@
   height: 80vh;
   width: 100%;
 }
+
+.details-page .order-btn {
+  background-color: rgb(255, 88, 116);
+  color: white;
+  float: right;
+}
+.details-page .order-btn:hover {
+  background-color: rgb(151, 0, 26) !important;
+  color: white;
+}

@@ -13,7 +13,7 @@ const DetailsCarousel = () => {
         <Carousel.Item>
           <img src={img2} className="d-block w-100" alt="img2" />
         </Carousel.Item>
-      </Carousel>
+       </Carousel>
     </div>
   );
 };
