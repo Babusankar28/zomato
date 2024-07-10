@@ -1,11 +1,11 @@
-import React from "react";
 import Wallpaper from "../components/Wallpaper";
 import QuickSearch from "../components/QuickSearch";
 
-const Home = () => {
+const Home = ({location}) => {
+ 
   return (
     <div>
-      <Wallpaper />
+      <Wallpaper location={location}/>
       <QuickSearch />
     </div>
   );

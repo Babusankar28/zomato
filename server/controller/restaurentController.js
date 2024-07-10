@@ -1,8 +1,7 @@
-const restaurentModel =require('../model/restaurentModel.js')
+const restaurent =require('../model/restaurentModel.js')
 const restaurentController = async (req, res) => {
   try {
-    const data = await restaurentModel.find();
-    console.log(data);
+    const data = await restaurent.find();
     res.send(data);
   } catch {
     res.status(500).send({ msg: "Internal Server Error" });

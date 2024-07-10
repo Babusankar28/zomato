@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import "../css/Wallpaper.css";
-const Wallpaper = () => {
+const Wallpaper = ({ location }) => {
   return (
     <div className="wallpaper text-white text-center">
       <Header />
@@ -19,17 +19,29 @@ const Wallpaper = () => {
               <h1 className="my-2">
                 Find the best restaurents, cafe, and bars
               </h1>
-              <div className="row mt-5 px-lg-5">
-                <div className="col-lg-4 ">
+              <div className="row mt-5 px-lg-4">
+                <div className="col-lg-4 mt-2">
                   <div className="input-group">
+                    <span className="input-group-text">
+                      <i className="bi bi-geo-alt-fill"></i>
+                    </span>
                     <select className="form-control">
-                      <option value="">Chennai</option>
-                      <option value="">Madurai</option>
+                      <option value="null">--- Select Location ---</option>
+                      {location.map((value , index) => {
+                        return (
+                          <option value={value.city} key={index}>
+                            {value.name + ", " + value.city}
+                          </option>
+                        );
+                      })}
                     </select>
                   </div>
                 </div>
-                <div className="col-lg-8">
+                <div className="col-lg-8 mt-2">
                   <div className="input-group">
+                    <span className="input-group-text">
+                      <i className="bi bi-search"></i>
+                    </span>
                     <input
                       type="text"
                       className="form-control"

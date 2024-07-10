@@ -16,6 +16,6 @@ const restaurantSchema = mongoose.Schema({
   mealtype_id: { type: Number },
 });
 
-const restaurentModel = mongoose.model("restaurent", restaurantSchema);
+const restaurent = mongoose.model("restaurent", restaurantSchema);
 
-module.exports = restaurentModel;
+module.exports = restaurent;

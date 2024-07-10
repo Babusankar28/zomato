@@ -1,9 +1,8 @@
-const locationModel = require("../model/locationModel");
+const location = require("../model/locationModel");
 
 const locationController = async (req, res) => {
   try {
-    console.log("hi");
-    const data = locationModel.find();
+    const data =await location.find();
     res.send(data);
   } catch (err){
     console.log(err);
